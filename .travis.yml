@@ -3,3 +3,15 @@ language: crystal
 script:
   - crystal tool format --check
   - bin/ameba
+  - shards build
+  - bin/asacoco_store
+
+deploy:
+  provider: pages
+  local-dir: dist
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  repo: AsaCoco-Store/AsaCoco-Store.github.io
+  target_branch: master
+  on:
+    branch: master
