@@ -15,3 +15,11 @@
     id: RPEntBOmgi4
     start_time: 685
     end_time: 861
+- name: AsaCoco Mist
+  type: Air Filling Type AsaCoco
+  image: mist.png
+  price: 1000
+  cm:
+    id: kHsCSYBBSFc
+    start_time: 810
+    end_time: 991
