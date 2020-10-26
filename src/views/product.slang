@@ -2,10 +2,7 @@ doctype html
 html
   head
     title = product.name + " - AsaCoco Store"
-    meta charset="UTF-8"
-    meta name="viewport" content="width=device-width,initial-scale=1.0"
-    link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"
+    == component "head"
     css:
       section { padding: 44px; width: 100vw; font-size: 21px; }
       input:focus { border-bottom: 1px solid orange !important; -webkit-box-shadow: 0 1px 0 0 orange !important; box-shadow: 0 1px 0 0 orange !important; }
