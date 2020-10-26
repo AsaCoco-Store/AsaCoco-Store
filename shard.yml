@@ -1,0 +1,20 @@
+name: asacoco_store
+version: 0.1.0
+
+authors:
+  - Tatsujin Chin <c910335@gmail.com>
+
+targets:
+  asacoco_store:
+    main: src/asacoco_store.cr
+
+crystal: 0.35.1
+
+license: MIT
+
+dependencies:
+  slang:
+    github: jeromegn/slang
+
+  kilt:
+    github: jeromegn/kilt

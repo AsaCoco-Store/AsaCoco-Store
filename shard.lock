@@ -1,0 +1,10 @@
+version: 2.0
+shards:
+  kilt:
+    git: https://github.com/jeromegn/kilt.git
+    version: 0.6.0
+
+  slang:
+    git: https://github.com/jeromegn/slang.git
+    version: 1.7.1
+

@@ -1,0 +1,17 @@
+- name: AsaCoco Insurance
+  type: Entry-type AsaCoco
+  image: insurance.png
+  price: 1000
+  cm:
+    id: OCGCgUmpd8k
+    start_time: 957
+    end_time: 1109
+- name: AsaCoco Antenna
+  type: Transmission-type AsaCoco
+  image: antenna.jpeg
+  srp: 2000
+  price: 1000
+  cm:
+    id: RPEntBOmgi4
+    start_time: 685
+    end_time: 861

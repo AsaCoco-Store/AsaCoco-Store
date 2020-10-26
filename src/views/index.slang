@@ -1,0 +1,84 @@
+doctype html
+html
+  head
+    title AsaCoco Store
+    meta charset="UTF-8"
+    meta name="viewport" content="width=device-width,initial-scale=1.0"
+    link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"
+    css:
+      @keyframes slideDown {
+        from {
+          top: -64px;
+          opacity: 0;
+        }
+        to {
+          top: 0px;
+          opacity: 1;
+        }
+      }
+      @keyframes slideUp {
+        from {
+          top: 64px;
+          opacity: 0;
+        }
+        to {
+          top: 0px;
+          opacity: 1;
+        }
+      }
+      @keyframes scaleIn {
+        from {
+          transform: scale(3.0);
+          opacity: 0.5;
+        }
+        to {
+          transform: scale(1.0);
+          opacity: 1;
+        }
+      }
+      .navbar-fixed { height: 0; }
+      header { padding-top: 64px; }
+      .full-screen { height: 100vh; width: 100vw; }
+      .container { height: 100%; }
+      .margin-auto { margin: auto; }
+      @media screen and (max-height: 520px) {
+        #logo { display: none; }
+      }
+      .slide-down { animation: slideDown 0.8s forwards; position: relative; opacity: 0; }
+      .slide-up { animation: slideUp 0.8s forwards; position: relative; opacity: 0; }
+      .scale-in { animation: scaleIn 0.2s forwards; opacity: 0; }
+      .btn-large { font-size: 21px; }
+      .invis { height: 0; width: 0; }
+      section { padding: 44px; width: 100vw; }
+      .btn-flat { background-color: unset !important; color: #039be5; text-transform: unset; }
+      .product-img { margin-top: 26px; max-width: 100%; }
+  body
+    == component "nav"
+    header.full-screen.orange.darken-3
+      .container.valign-wrapper.center-align.white-text
+        .margin-auto
+          img.scale-in id="logo" src="assets/logo.png" width="210" height="210" style="animation-delay: 4s; opacity: 0;"
+          h3
+            strong
+              span.slide-down Healthiness. 
+              span.slide-down style="animation-delay: 1s" Happiness. 
+              span.slide-down style="animation-delay: 2s" Heavenliness.
+          h4.slide-up style="animation-delay: 3s" Sweep away all worries. Brighten up your life.
+          br
+          a.waves-effect.waves-light.btn-large.black.scale-in href="#store" style="animation-delay: 4s" Explore
+            i.material-icons.right keyboard_arrow_right
+    #store.invis
+    - products.each_with_index do |product, i|
+      section id=product.id class="#{i % 2 == 0 ? "white black" : "black white" }-text"
+        .container.center-align
+          h3
+            b = product.name
+          h4 = product.type
+          a.btn-large.btn-flat href="https://youtu.be/#{product.cm.id}?t=#{product.cm.start_time}" target="_blank" Learn more
+            i.material-icons.right keyboard_arrow_right
+          a.btn-large.btn-flat href="#{product.id}.html" Buy
+            i.material-icons.right keyboard_arrow_right
+          br
+          img.product-img src="assets/#{product.image}"
+    == component "footer"
