@@ -26,7 +26,7 @@ html
       .container
         .row
           .col.s12.m6
-            img src="assets/#{product.image}" style="max-width: 100%;"
+            img src="assets/#{product.image}" style="max-width: 100%; max-height: 50vh;"
           .col.s12.m6
             h3
               strong = product.name

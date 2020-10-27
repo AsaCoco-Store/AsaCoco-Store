@@ -66,7 +66,7 @@ html
       .invis { height: 0; width: 0; }
       section { padding: 44px; width: 100vw; }
       .btn-flat { background-color: unset !important; color: #039be5; text-transform: unset; padding: 0;}
-      .product-img { margin-top: 26px; max-width: 100%; }
+      .product-img { margin-top: 26px; max-width: 100%; max-height: 50vh; }
   body
     == component "nav"
     header.full-screen.orange.darken-3

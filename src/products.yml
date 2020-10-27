@@ -23,3 +23,11 @@
     id: kHsCSYBBSFc
     start_time: 810
     end_time: 991
+- name: Cocoginol
+  type: Suppository-type AsaCoco
+  image: cocoginol.png
+  price: 1000
+  cm:
+    id: w66x87VSQRc
+    start_time: 615
+    end_time: 764
