@@ -39,6 +39,13 @@ To add a new product, edit `src/products.yml` and upload the image to `src/asset
 
 - [Tatsujin Chin](https://github.com/c910335) - creator and maintainer
 
+## Special Thanks
+
+Kiryu Coco
+
+- [YouTube](https://www.youtube.com/channel/UCS9uQI-jC3DE0L4IpXyvr6w)
+- [Twitter](https://twitter.com/kiryucoco)
+
 ## License
 
 All images are copyright to Cover Corp.
