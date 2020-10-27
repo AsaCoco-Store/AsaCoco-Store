@@ -13,5 +13,6 @@ deploy:
   github-token: $GITHUB_TOKEN
   repo: AsaCoco-Store/AsaCoco-Store.github.io
   target_branch: master
+  fqdn: store.asacoco.moe
   on:
     branch: master
