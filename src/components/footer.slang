@@ -17,5 +17,4 @@ footer.page-footer.white-text.orange.darken-2
   .footer-copyright
     .container
       | Copyright © 2020 AsaCoco Store
-      a.grey-text.text-lighten-4.right href="https://github.com/AsaCoco-Store" GitHub
-
+      a.grey-text.text-lighten-4.right href="https://github.com/AsaCoco-Store/AsaCoco-Store" GitHub
