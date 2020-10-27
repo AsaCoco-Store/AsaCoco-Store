@@ -13,7 +13,7 @@ footer.page-footer.white-text.orange.darken-2
         ul
           - products.each do |product|
             li
-              a.grey-text.text-lighten-3 href="#{product.id}.html" = product.name
+              a.grey-text.text-lighten-3 href="/##{product.id}" = product.name
   .footer-copyright
     .container
       | Copyright © 2020 AsaCoco Store
