@@ -29,18 +29,18 @@ html
             img src="assets/#{product.image}" style="max-width: 100%;"
           .col.s12.m6
             h3
-              b = product.name
+              strong = product.name
             h4 = product.type
             div Quantity:
               .input-field.inline
                 input#quantity type="number" value="1" onchange="update()"
             p Price:
               - if srp = product.srp
-                del ¥
+                del style="white-space: nowrap;" ¥
                   span#srp default="#{product.srp}" = product.srp
-              | ¥
-              span#prize default="#{product.price}" = product.price
-            a.waves-effect.waves-light.btn-large.black href="https://youtu.be/#{product.cm.id}?t=#{product.cm.start_time}" target="_blank" Buy
+              strong style="font-size: 32px; white-space: nowrap;" ¥
+                span#prize default="#{product.price}" = product.price
+            a.waves-effect.waves-light.btn-large.black href="https://youtu.be/#{product.cm.id}?t=#{product.cm.start_time}" target="_blank" style="width: 100%" Buy
             javascript:
               function update() {
                 input = document.getElementById('quantity');

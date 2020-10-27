@@ -87,7 +87,7 @@ html
       section id=product.id class="#{i % 2 == 0 ? "white black" : "black white" }-text"
         .container.center-align
           h3
-            b = product.name
+            strong = product.name
           h4 = product.type
           a.btn-large.btn-flat href="https://youtu.be/#{product.cm.id}?t=#{product.cm.start_time}" target="_blank" Learn more
             i.material-icons.right keyboard_arrow_right
