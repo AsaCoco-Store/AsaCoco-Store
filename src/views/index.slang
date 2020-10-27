@@ -44,7 +44,7 @@ html
       }
       .slide-down { animation: slideDown 0.8s forwards; position: relative; opacity: 0; }
       .slide-up { animation: slideUp 0.8s forwards; position: relative; opacity: 0; }
-      .scale-in { animation: scaleIn 0.2s forwards; opacity: 0; }
+      .scale-in { animation: scaleIn 0.3s forwards; opacity: 0; }
       .btn-large { font-size: 21px; }
       .invis { height: 0; width: 0; }
       section { padding: 44px; width: 100vw; }
@@ -61,7 +61,7 @@ html
               span.slide-down Healthiness. 
               span.slide-down style="animation-delay: 1s" Happiness. 
               span.slide-down style="animation-delay: 2s" Heavenliness.
-          h4.slide-up style="animation-delay: 3s" Sweep away all worries. Brighten up your life.
+          h4.slide-up style="animation-delay: 3s" Sweep all worries away. Brighten your life up.
           br
           a.waves-effect.waves-light.btn-large.black.scale-in href="#store" style="animation-delay: 4s" Explore
             i.material-icons.right keyboard_arrow_right
