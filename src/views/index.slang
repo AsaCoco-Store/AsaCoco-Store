@@ -34,6 +34,7 @@ html
           opacity: 1;
         }
       }
+      html { scroll-behavior: smooth; }
       .navbar-fixed { height: 0; }
       header { padding-top: 64px; }
       .full-screen { height: 100vh; width: 100vw; }
