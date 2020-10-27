@@ -40,6 +40,9 @@ html
       .full-screen { height: 100vh; width: 100vw; }
       .container { height: 100%; }
       .margin-auto { margin: auto; }
+      @media screen and (max-height: 720px) {
+        #logo { width: 140px; height: 140px; }
+      }
       @media screen and (max-height: 520px) {
         #logo { display: none; }
       }
@@ -49,7 +52,7 @@ html
       .btn-large { font-size: 21px; }
       .invis { height: 0; width: 0; }
       section { padding: 44px; width: 100vw; }
-      .btn-flat { background-color: unset !important; color: #039be5; text-transform: unset; }
+      .btn-flat { background-color: unset !important; color: #039be5; text-transform: unset; padding: 0;}
       .product-img { margin-top: 26px; max-width: 100%; }
   body
     == component "nav"
@@ -75,7 +78,7 @@ html
           h4 = product.type
           a.btn-large.btn-flat href="https://youtu.be/#{product.cm.id}?t=#{product.cm.start_time}" target="_blank" Learn more
             i.material-icons.right keyboard_arrow_right
-          a.btn-large.btn-flat href="#{product.id}.html" Buy
+          a.btn-large.btn-flat href="#{product.id}.html" style="padding-left: 20px;" Buy
             i.material-icons.right keyboard_arrow_right
           br
           img.product-img src="assets/#{product.image}"
