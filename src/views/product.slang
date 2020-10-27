@@ -54,5 +54,5 @@ html
     section.black.white-text
       .container
         h3 CM
-        iframe src="https://www.youtube.com/embed/#{product.cm.id}?start=#{product.cm.start_time}&end=#{product.cm.end_time}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="width: 100%; min-height: 540px"
+        iframe src="https://www.youtube.com/embed/#{product.cm.id}?start=#{product.cm.start_time}&end=#{product.cm.end_time}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="width: 100%; min-height: 45vw"
     == component "footer"
