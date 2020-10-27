@@ -2,6 +2,19 @@ doctype html
 html
   head
     title = product.name + " - AsaCoco Store"
+    meta name="description" content=product.type
+    meta name="image" content="https://store.asacoco.moe/assets/#{product.image}"
+    meta itemprop="name" content="#{product.name} - AsaCoco Store"
+    meta itemprop="description" content=product.type
+    meta itemprop="image" content="https://store.asacoco.moe/assets/#{product.image}"
+    meta name="twitter:card" content="summary"
+    meta name="twitter:title" content="#{product.name} - AsaCoco Store"
+    meta name="twitter:description" content=product.type
+    meta name="twitter:image:src" content="https://store.asacoco.moe/assets/#{product.image}"
+    meta property="og:title" content="#{product.name} - AsaCoco Store"
+    meta property="og:type" content="website"
+    meta property="og:description" content=product.type
+    meta property="og:image" content="https://store.asacoco.moe/assets/#{product.image}"
     == component "head"
     css:
       section { padding: 44px; width: 100vw; font-size: 21px; }
