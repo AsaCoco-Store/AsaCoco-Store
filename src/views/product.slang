@@ -1,6 +1,7 @@
 doctype html
 html
   head
+    == component "head"
     title = product.name + " - AsaCoco Store"
     meta name="description" content=product.type
     meta name="image" content="https://store.asacoco.moe/assets/#{product.image}"
@@ -15,7 +16,6 @@ html
     meta property="og:type" content="website"
     meta property="og:description" content=product.type
     meta property="og:image" content="https://store.asacoco.moe/assets/#{product.image}"
-    == component "head"
     css:
       section { padding: 44px; width: 100vw; font-size: 21px; }
       input:focus { border-bottom: 1px solid orange !important; -webkit-box-shadow: 0 1px 0 0 orange !important; box-shadow: 0 1px 0 0 orange !important; }

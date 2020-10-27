@@ -1,6 +1,7 @@
 doctype html
 html
   head
+    == component "head"
     title AsaCoco Store
     meta name="description" content="Sweep all worries away. Brighten your life up."
     meta name="image" content="https://store.asacoco.moe/assets/og_logo.png"
@@ -15,7 +16,6 @@ html
     meta property="og:type" content="website"
     meta property="og:description" content="Sweep all worries away. Brighten your life up."
     meta property="og:image" content="https://store.asacoco.moe/assets/og_logo.png"
-    == component "head"
     css:
       @keyframes slideDown {
         from {
