@@ -38,3 +38,9 @@ To add a new product, edit `src/products.yml` and upload the image to `src/asset
 ## Contributors
 
 - [Tatsujin Chin](https://github.com/c910335) - creator and maintainer
+
+## License
+
+All images are copyright to Cover Corp.
+
+The other parts are licensed under the MIT License.
