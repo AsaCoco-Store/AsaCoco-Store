@@ -31,8 +31,8 @@
     id: w66x87VSQRc
     start_time: 615
     end_time: 764
-- name: Extra Large Kiryu-shiki 10L
-  type: Calorie Burner Type
+- name: Extra Large Calorie Buner Type Kiryu 10L
+  type: Calorie Burning Type AsaCoco
   image: kiryu_shiki_10l.png
   srp: 5000
   price: 1000
@@ -48,3 +48,11 @@
     id: ta6L-CarI3Q
     start_time: 934
     end_time: 1088
+- name: Calorie Burner Type Kiryu
+  type: Calorie Burning Type AsaCoco
+  image: kiryu_shiki.png
+  price: 1000
+  cm:
+    id: hq_WQmrZLKs
+    start_time: 783
+    end_time: 986
