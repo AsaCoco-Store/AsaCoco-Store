@@ -40,3 +40,11 @@
     id: VcxeO4YfMXU
     start_time: 815
     end_time: 1034
+- name: AsaCoco Spray
+  type: Aerosol-type AsaCoco
+  image: spray.png
+  price: 893
+  cm:
+    id: ta6L-CarI3Q
+    start_time: 934
+    end_time: 1088
