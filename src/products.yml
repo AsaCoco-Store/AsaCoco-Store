@@ -56,3 +56,11 @@
     id: hq_WQmrZLKs
     start_time: 783
     end_time: 986
+- name: Shabuppy Turn
+  type: Eating-type AsaCoco
+  image: shabuppy_turn.png
+  price: 500
+  cm:
+    id: n4-jb4qc_zA
+    start_time: 803
+    end_time: 910
