@@ -18,3 +18,4 @@ footer.page-footer.white-text.orange.darken-2
     .container
       | Copyright © 2020 AsaCoco Store
       a.grey-text.text-lighten-4.right href="https://github.com/AsaCoco-Store/AsaCoco-Store" GitHub
+script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"

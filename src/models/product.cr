@@ -11,4 +11,12 @@ class Product
   def id
     name.downcase.split.join('_')
   end
+
+  def to_json(json : JSON::Builder)
+    json.object do
+      json.field "id", id
+      json.field "name", name
+      json.field "image", image
+    end
+  end
 end
