@@ -1,7 +1,9 @@
 .navbar-fixed
   nav style="box-shadow: unset; -webkit-box-shadow: unset;"
     .nav-wrapper.orange.darken-3 style="white-space: nowrap;"
-      a.brand-logo.left style="left: 1rem;" href="/" AsaCoco Store
+      a.brand-logo.left style="left: 1rem;" href="/"
+        img src="assets/logo.png" width="40" height="40" style="position: relative; top: 7px"
+        | AsaCoco Store
       .right style="height: 100%"
         .input-field
           input.orange-text.text-darken-3 id="search" type="search" required=true data-products=products.to_json style="padding-left: 2rem; width: calc(100% - 2rem); -webkit-appearance: none;"
