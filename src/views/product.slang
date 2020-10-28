@@ -59,8 +59,8 @@ html
       .container
         h4 Recommended products
         .row
-          - 3.times do |i|
-            .col.s12.m6.l4
+          - 4.times do |i|
+            .col.s12.m6.l4 id="recommend-#{i}"
               a.black-text id="recommend-link-#{i}"
                 .card
                   .card-image
@@ -77,7 +77,7 @@ javascript:
   document.addEventListener('DOMContentLoaded', function() {
     let recommends = document.getElementById('recommends')
     let products = JSON.parse(recommends.getAttribute('data-recommends'))
-    for (let i = 0; i != 3; i++) {
+    for (let i = 0; i != 4; i++) {
       let j = Math.floor(Math.random() * (products.length - i)) + i
       let product = products[j]
       products[j] = products[i]
@@ -88,4 +88,5 @@ javascript:
       document.getElementById(`recommend-type-${i}`).textContent = product.type
       document.getElementById(`recommend-price-${i}`).textContent = product.price
     }
+    document.getElementById('recommend-3').classList.add('hide-on-large-only')
   })
