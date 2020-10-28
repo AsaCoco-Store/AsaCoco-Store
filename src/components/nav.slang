@@ -4,7 +4,7 @@
       a.brand-logo.left style="left: 1rem;" href="/" AsaCoco Store
       .right style="height: 100%"
         .input-field
-          input.orange-text.text-darken-3 id="search" type="search" required=true data-products=products.to_json style="padding-left: 2rem; width: calc(100% - 2rem);"
+          input.orange-text.text-darken-3 id="search" type="search" required=true data-products=products.to_json style="padding-left: 2rem; width: calc(100% - 2rem); -webkit-appearance: none;"
           label id="search-icon" class="label-icon" for="search" style="left: unset; right: 1rem"
             i class="material-icons" search
 
