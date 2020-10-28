@@ -56,6 +56,14 @@
     id: hq_WQmrZLKs
     start_time: 783
     end_time: 986
+- name: Coco Furikake
+  type: Furikake-type AsaCoco
+  image: furikake.png
+  price: 893
+  cm:
+    id: n2yIIhJl3mo
+    start_time: 863
+    end_time: 1068
 - name: Shabuppy Turn
   type: Eating-type AsaCoco
   image: shabuppy_turn.png
