@@ -16,7 +16,9 @@ class Product
     json.object do
       json.field "id", id
       json.field "name", name
+      json.field "type", type
       json.field "image", image
+      json.field "price", price
     end
   end
 end
