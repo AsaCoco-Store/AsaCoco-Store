@@ -43,7 +43,7 @@ html
             a.waves-effect.waves-light.btn-large.black href="https://youtu.be/#{product.cm.id}?t=#{product.cm.start_time}" target="_blank" style="width: 100%" Buy
             javascript:
               function update() {
-                input = document.getElementById('quantity');
+                input = document.getElementById('quantity')
                 if (input.value < 1)
                   input.value = 1
                 if (srp = document.getElementById('srp'))
