@@ -27,3 +27,4 @@ css:
   .autocomplete-content { width: 300px !important; left: unset !important; right: 0; }
   .dropdown-content li > span { color: black; }
   .autocomplete-content li .highlight { color: #ef6c00; }
+  .autocomplete-content li img { object-fit: contain; }
