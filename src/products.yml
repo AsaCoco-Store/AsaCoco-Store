@@ -31,3 +31,12 @@
     id: w66x87VSQRc
     start_time: 615
     end_time: 764
+- name: Extra Large Kiryu-shiki 10L
+  type: Calorie Burner Type
+  image: kiryu_shiki_10l.png
+  srp: 5000
+  price: 1000
+  cm:
+    id: VcxeO4YfMXU
+    start_time: 815
+    end_time: 1034
