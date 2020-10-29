@@ -106,3 +106,12 @@
     id: JdxYDIpvF14
     start_time: 958
     end_time: 1109
+- name: PacifCoco
+  type: Pacifier-type AsaCoco
+  image: pacifcoco.png
+  srp: 50000
+  price: 5000
+  cm:
+    id: J0f4u4LElKs
+    start_time: 641
+    end_time: 768
