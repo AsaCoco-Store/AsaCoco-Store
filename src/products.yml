@@ -98,3 +98,11 @@
     id: siU1f4LB2yU
     start_time: 783
     end_time: 932
+- name: AsaCoco Hook
+  type: Filling-type AsaCoco
+  image: hook.png
+  price: 5000
+  cm:
+    id: JdxYDIpvF14
+    start_time: 958
+    end_time: 1109
