@@ -89,3 +89,12 @@
     id: yqJxK9dDNy0
     start_time: 696
     end_time: 868
+- name: Anti-AsaCoco
+  type: Drinking-type Anti-AsaCoco
+  image: anti_asacoco.png
+  srp: 5000
+  price: 2000
+  cm:
+    id: siU1f4LB2yU
+    start_time: 783
+    end_time: 932
