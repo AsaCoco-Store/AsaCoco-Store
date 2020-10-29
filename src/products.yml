@@ -80,3 +80,12 @@
     id: 1YufyCSVvmg
     start_time: 925
     end_time: 1091
+- name: Cannacoco
+  type: Planting-type AsaCoco
+  image: cannacoco.png
+  srp: 10000
+  price: 5000
+  cm:
+    id: yqJxK9dDNy0
+    start_time: 696
+    end_time: 868
