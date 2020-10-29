@@ -80,7 +80,7 @@
     id: 1YufyCSVvmg
     start_time: 925
     end_time: 1091
-- name: Cannacoco
+- name: CannaCoco
   type: Planting-type AsaCoco
   image: cannacoco.png
   srp: 10000
