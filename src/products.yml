@@ -72,3 +72,11 @@
     id: n4-jb4qc_zA
     start_time: 803
     end_time: 910
+- name: AsaCoco-chi
+  type: Nurturing-type AsaCoco
+  image: asacoco_chi.png
+  price: 2500
+  cm:
+    id: 1YufyCSVvmg
+    start_time: 925
+    end_time: 1091
