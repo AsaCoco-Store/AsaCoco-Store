@@ -51,8 +51,8 @@ html
                   span#srp default="#{product.srp}" = product.srp
               strong style="font-size: 32px; white-space: nowrap;" ¥
                 span#prize default="#{product.price}" = product.price
-                - if product.monthly
-                    span \/month
+              - if product.monthly
+                span \/month
             a.waves-effect.waves-light.btn-large.black href="https://youtu.be/#{product.cm.id}?t=#{product.cm.start_time}" target="_blank" style="width: 100%" = product.monthly ? "Join" : "Buy"
     section.black.white-text
       .container
