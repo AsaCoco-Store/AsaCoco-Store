@@ -143,3 +143,12 @@
     id: zzf8HYuGoQg
     start_time: 689
     end_time: 817
+- name: Coco's Toilet
+  type: Toilet-type AsaCoco
+  image: toilet.png
+  srp: 80000
+  price: 40000
+  cm:
+    id: vyG3OXVp888
+    start_time: 870
+    end_time: 984
