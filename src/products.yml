@@ -161,3 +161,21 @@
     id: ZUOQvvba_Uo
     start_time: 404
     end_time: 511
+- name: AsaCoco T-shirt
+  type: Wearing-type AsaCoco
+  image: asacoco_t_shirt.jpg
+  price: 3800
+  url: https://hololive.booth.pm/items/2186749
+  cm:
+    id: i6fEDcN_tHI
+    start_time: 845
+    end_time: 958
+- name: Kusozako T-shirt
+  type: Walking-type Kusozako
+  image: kusozako_t_shirt.jpg
+  price: 2500
+  url: https://hololive.booth.pm/items/1796466
+  cm:
+    id: i6fEDcN_tHI
+    start_time: 845
+    end_time: 958
