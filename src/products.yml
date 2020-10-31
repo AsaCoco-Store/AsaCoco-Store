@@ -115,3 +115,11 @@
     id: J0f4u4LElKs
     start_time: 641
     end_time: 768
+- name: Superfine Waterbed
+  type: Bed-in Type AsaCoco
+  image: waterbed.png
+  price: 3000
+  cm:
+    id: A95H2M4MbGo
+    start_time: 727
+    end_time: 858
