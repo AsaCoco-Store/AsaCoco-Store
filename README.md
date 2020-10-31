@@ -27,6 +27,26 @@ bin/asacoco_store
 
 To add a new product, edit `src/products.yml` and upload the image to `src/assets`.
 
+### Product
+
+| name    | description            | type    | required |
+|:-------:|:----------------------:|:-------:|:--------:|
+| name    | product name           | string  | true     |
+| type    | AsaCoco type           | string  | true     |
+| image   | image file name        | string  | true     |
+| srp     | suggested retail price | integer | false    |
+| price   | price                  | integer | true     |
+| monthly | monthly                | boolean | false    |
+| cm      | advertisement          | CM      | true     |
+
+#### CM
+
+| name       | description                     | type    | required |
+|:----------:|:-------------------------------:|:-------:|:--------:|
+| id         | AsaCoco YouTube video ID        | string  | true     |
+| start_time | advert starting time in seconds | integer | true     |
+| end_time   | advert ending time in seconds   | integer | true     |
+
 ## Contributing
 
 1. Fork it (<https://github.com/AsaCoco-Store/asacoco-store/fork>)
