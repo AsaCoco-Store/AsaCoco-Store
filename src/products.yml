@@ -152,3 +152,12 @@
     id: vyG3OXVp888
     start_time: 870
     end_time: 984
+- name: AsaCoco Eye Drops
+  type: Penetrating-type AsaCoco
+  image: eye_drops.png
+  srp: 10000
+  price: 3000
+  cm:
+    id: ZUOQvvba_Uo
+    start_time: 404
+    end_time: 511
