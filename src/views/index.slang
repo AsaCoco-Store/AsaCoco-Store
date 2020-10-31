@@ -88,8 +88,9 @@ html
         .container.center-align
           h3
             strong = product.name
-          h4 = product.type
-          a.btn-large.btn-flat href="https://youtu.be/#{product.cm.id}?t=#{product.cm.start_time}" target="_blank" Learn more
+          - if type = product.type
+            h4 = type
+          a.btn-large.btn-flat href=product.url target="_blank" Learn more
             i.material-icons.right keyboard_arrow_right
           a.btn-large.btn-flat href="#{product.id}.html" style="padding-left: 20px;" = product.monthly ? "Join" : "Buy"
             i.material-icons.right keyboard_arrow_right

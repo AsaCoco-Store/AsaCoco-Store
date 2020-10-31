@@ -3,18 +3,22 @@ html
   head
     == component "head"
     title = product.name + " - AsaCoco Store"
-    meta name="description" content=product.type
+    - if type = product.type
+      meta name="description" content=type
     meta name="image" content="https://store.asacoco.moe/assets/#{product.image}"
     meta itemprop="name" content="#{product.name} - AsaCoco Store"
-    meta itemprop="description" content=product.type
+    - if type = product.type
+      meta itemprop="description" content=type
     meta itemprop="image" content="https://store.asacoco.moe/assets/#{product.image}"
     meta name="twitter:card" content="summary"
     meta name="twitter:title" content="#{product.name} - AsaCoco Store"
-    meta name="twitter:description" content=product.type
+    - if type = product.type
+      meta name="twitter:description" content=type
     meta name="twitter:image:src" content="https://store.asacoco.moe/assets/#{product.image}"
     meta property="og:title" content="#{product.name} - AsaCoco Store"
     meta property="og:type" content="website"
-    meta property="og:description" content=product.type
+    - if type = product.type
+      meta property="og:description" content=type
     meta property="og:image" content="https://store.asacoco.moe/assets/#{product.image}"
     css:
       section { padding: 10px; width: 100vw; font-size: 21px; }
@@ -30,7 +34,8 @@ html
           .col.s12.m6
             h3
               strong = product.name
-            h4 = product.type
+            - if type = product.type
+              h4 = type
             - unless product.monthly
               div Quantity:
                 .input-field.inline
@@ -53,7 +58,7 @@ html
                 span#prize default="#{product.price}" = product.price
               - if product.monthly
                 span \/month
-            a.waves-effect.waves-light.btn-large.black href="https://youtu.be/#{product.cm.id}?t=#{product.cm.start_time}" target="_blank" style="width: 100%" = product.monthly ? "Join" : "Buy"
+            a.waves-effect.waves-light.btn-large.black href=product.url target="_blank" style="width: 100%" = product.monthly ? "Join" : "Buy"
     section.black.white-text
       .container
         h4 CM
@@ -71,7 +76,7 @@ html
                   .card-content style="overflow-x: hidden; white-space: nowrap;"
                     span.card-title
                       strong id="recommend-name-#{i}"
-                    p id="recommend-type-#{i}"
+                    p id="recommend-type-#{i}" == "&nbsp;"
                     p style="font-size: 28px;" ¥
                       span id="recommend-price-#{i}"
                       span.hide id="recommend-monthly-#{i}" style="font-size: 21px;" \/month
@@ -89,7 +94,8 @@ javascript:
       document.getElementById(`recommend-link-${i}`).setAttribute('href', `${product.id}.html`)
       document.getElementById(`recommend-image-${i}`).setAttribute('src', `assets/${product.image}`)
       document.getElementById(`recommend-name-${i}`).textContent = product.name
-      document.getElementById(`recommend-type-${i}`).textContent = product.type
+      if (product.type)
+        document.getElementById(`recommend-type-${i}`).textContent = product.type
       document.getElementById(`recommend-price-${i}`).textContent = product.price
       if (product.monthly)
         document.getElementById(`recommend-monthly-${i}`).classList.remove('hide')

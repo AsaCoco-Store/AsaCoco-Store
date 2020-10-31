@@ -32,11 +32,12 @@ To add a new product, edit `src/products.yml` and upload the image to `src/asset
 | name    | description            | type    | required |
 |:-------:|:----------------------:|:-------:|:--------:|
 | name    | product name           | string  | true     |
-| type    | AsaCoco type           | string  | true     |
+| type    | AsaCoco type           | string  | false    |
 | image   | image file name        | string  | true     |
 | srp     | suggested retail price | integer | false    |
 | price   | price                  | integer | true     |
 | monthly | monthly                | boolean | false    |
+| url     | real product url       | string  | false    |
 | cm      | advertisement          | CM      | true     |
 
 #### CM
