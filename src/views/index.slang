@@ -91,7 +91,7 @@ html
           h4 = product.type
           a.btn-large.btn-flat href="https://youtu.be/#{product.cm.id}?t=#{product.cm.start_time}" target="_blank" Learn more
             i.material-icons.right keyboard_arrow_right
-          a.btn-large.btn-flat href="#{product.id}.html" style="padding-left: 20px;" Buy
+          a.btn-large.btn-flat href="#{product.id}.html" style="padding-left: 20px;" = product.monthly ? "Join" : "Buy"
             i.material-icons.right keyboard_arrow_right
           br
           img.product-img src="assets/#{product.image}"

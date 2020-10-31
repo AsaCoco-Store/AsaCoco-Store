@@ -31,26 +31,29 @@ html
             h3
               strong = product.name
             h4 = product.type
-            div Quantity:
-              .input-field.inline
-                input#quantity type="number" value="1" onchange="update()"
+            - unless product.monthly
+              div Quantity:
+                .input-field.inline
+                  input#quantity type="number" value="1" onchange="update()"
+              javascript:
+                function update() {
+                  input = document.getElementById('quantity')
+                  if (input.value < 1)
+                    input.value = 1
+                  if (srp = document.getElementById('srp'))
+                    srp.textContent = srp.getAttribute('default') * input.value
+                  prize = document.getElementById('prize')
+                  prize.textContent = prize.getAttribute('default') * input.value
+                }
             p Price:
               - if srp = product.srp
                 del style="white-space: nowrap;" ¥
                   span#srp default="#{product.srp}" = product.srp
               strong style="font-size: 32px; white-space: nowrap;" ¥
                 span#prize default="#{product.price}" = product.price
-            a.waves-effect.waves-light.btn-large.black href="https://youtu.be/#{product.cm.id}?t=#{product.cm.start_time}" target="_blank" style="width: 100%" Buy
-            javascript:
-              function update() {
-                input = document.getElementById('quantity')
-                if (input.value < 1)
-                  input.value = 1
-                if (srp = document.getElementById('srp'))
-                  srp.textContent = srp.getAttribute('default') * input.value
-                prize = document.getElementById('prize')
-                prize.textContent = prize.getAttribute('default') * input.value
-              }
+                - if product.monthly
+                    span \/month
+            a.waves-effect.waves-light.btn-large.black href="https://youtu.be/#{product.cm.id}?t=#{product.cm.start_time}" target="_blank" style="width: 100%" = product.monthly ? "Join" : "Buy"
     section.black.white-text
       .container
         h4 CM
@@ -71,6 +74,7 @@ html
                     p id="recommend-type-#{i}"
                     p style="font-size: 28px;" ¥
                       span id="recommend-price-#{i}"
+                      span.hide id="recommend-monthly-#{i}" style="font-size: 21px;" \/month
     == component "footer"
 
 javascript:
@@ -87,6 +91,8 @@ javascript:
       document.getElementById(`recommend-name-${i}`).textContent = product.name
       document.getElementById(`recommend-type-${i}`).textContent = product.type
       document.getElementById(`recommend-price-${i}`).textContent = product.price
+      if (product.monthly)
+        document.getElementById(`recommend-monthly-${i}`).classList.remove('hide')
     }
     document.getElementById('recommend-3').classList.add('hide-on-large-only')
   })

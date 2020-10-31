@@ -6,6 +6,7 @@ class Product
   property image : String
   property srp : Int64?
   property price : Int64
+  property monthly : Bool?
   property cm : CM
 
   def id
@@ -19,6 +20,7 @@ class Product
       json.field "type", type
       json.field "image", image
       json.field "price", price
+      json.field "monthly", monthly || false
     end
   end
 end

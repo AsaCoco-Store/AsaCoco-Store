@@ -2,6 +2,7 @@
   type: Entry-type AsaCoco
   image: insurance.png
   price: 1000
+  monthly: true
   cm:
     id: OCGCgUmpd8k
     start_time: 957
@@ -119,6 +120,7 @@
   type: Bed-in Type AsaCoco
   image: waterbed.png
   price: 3000
+  monthly: true
   cm:
     id: A95H2M4MbGo
     start_time: 727
