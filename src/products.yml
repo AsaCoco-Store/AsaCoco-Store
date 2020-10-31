@@ -179,3 +179,11 @@
     id: i6fEDcN_tHI
     start_time: 845
     end_time: 958
+- name: Coco Lotion
+  type: Lubricating-type AsaCoco
+  image: lotion.png
+  price: 3500
+  cm:
+    id: bHX-HtWZ_OA
+    start_time: 708
+    end_time: 828
