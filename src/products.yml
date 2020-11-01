@@ -217,3 +217,11 @@
     id: kpDocyEObpc
     start_time: 703
     end_time: 804
+- name: Instant AsaCoco Set
+  type: Drinking, Breath-in, Injection Type AsaCoco
+  image: set.png
+  price: 10000
+  cm:
+    id: rSCDDD4l8po
+    start_time: 619
+    end_time: 687
