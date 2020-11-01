@@ -194,3 +194,11 @@
     id: ptsD3SUacww
     start_time: 686
     end_time: 781
+- name: Fairy Angel Pad
+  image: pad.png
+  srp: 5000
+  price: 3000
+  cm:
+    id: RLIO0XT6vQI
+    start_time: 714
+    end_time: 796
