@@ -187,3 +187,10 @@
     id: bHX-HtWZ_OA
     start_time: 708
     end_time: 828
+- name: Plug-in Type AsaCoco
+  image: plug.png
+  price: 6000
+  cm:
+    id: ptsD3SUacww
+    start_time: 686
+    end_time: 781
