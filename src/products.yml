@@ -202,3 +202,10 @@
     id: RLIO0XT6vQI
     start_time: 714
     end_time: 796
+- name: Cocotine Patch
+  image: patch.png
+  price: 2000
+  cm:
+    id: Za53d148Qe4
+    start_time: 649
+    end_time: 700
