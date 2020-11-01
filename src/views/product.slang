@@ -46,16 +46,16 @@ html
                   if (input.value < 1)
                     input.value = 1
                   if (srp = document.getElementById('srp'))
-                    srp.textContent = srp.getAttribute('default') * input.value
-                  prize = document.getElementById('prize')
-                  prize.textContent = prize.getAttribute('default') * input.value
+                    srp.textContent = (srp.getAttribute('default') * input.value).toLocaleString()
+                  price = document.getElementById('price')
+                  price.textContent = (price.getAttribute('default') * input.value).toLocaleString()
                 }
             p Price:
               - if srp = product.srp
                 del style="white-space: nowrap;" ¥
-                  span#srp default="#{product.srp}" = product.srp
+                  span#srp default="#{product.srp}" = srp.format
               strong style="font-size: 32px; white-space: nowrap;" ¥
-                span#prize default="#{product.price}" = product.price
+                span#price default="#{product.price}" = product.price.format
               - if product.monthly
                 span \/month
             a.waves-effect.waves-light.btn-large.black href=product.url target="_blank" style="width: 100%" = product.monthly ? "Join" : "Buy"
@@ -96,7 +96,7 @@ javascript:
       document.getElementById(`recommend-name-${i}`).textContent = product.name
       if (product.type)
         document.getElementById(`recommend-type-${i}`).textContent = product.type
-      document.getElementById(`recommend-price-${i}`).textContent = product.price
+      document.getElementById(`recommend-price-${i}`).textContent = product.price.toLocaleString()
       if (product.monthly)
         document.getElementById(`recommend-monthly-${i}`).classList.remove('hide')
     }
