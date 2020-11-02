@@ -39,7 +39,7 @@ html
       }
       @keyframes scaleIn {
         from {
-          transform: scale(3.0);
+          transform: scale(5.0);
           opacity: 0.5;
         }
         to {
@@ -61,7 +61,7 @@ html
       }
       .slide-down { animation: slideDown 0.8s forwards; position: relative; opacity: 0; }
       .slide-up { animation: slideUp 0.8s forwards; position: relative; opacity: 0; }
-      .scale-in { animation: scaleIn 0.3s forwards; opacity: 0; }
+      .scale-in { animation: scaleIn 0.2s forwards; opacity: 0; }
       .btn-large { font-size: 21px; }
       .invis { height: 0; width: 0; }
       section { padding: 44px; width: 100vw; }
