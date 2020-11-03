@@ -1,3 +1,11 @@
+- name: AsaCocoffee
+  type: Waking-type AsaCoco
+  image: coffee.png
+  price: 500
+  cm:
+    id: bpYJ6bzkmgs
+    start_time: 787
+    end_time: 989
 - name: AsaCoco Insurance
   type: Entry-type AsaCoco
   image: insurance.png
