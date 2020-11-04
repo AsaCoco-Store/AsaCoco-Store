@@ -2,7 +2,7 @@
   nav style="box-shadow: unset; -webkit-box-shadow: unset;"
     .nav-wrapper.orange.darken-3 style="white-space: nowrap;"
       a.brand-logo.left style="left: 1rem;" href="/"
-        img src="assets/logo.png" width="40" height="40" style="position: relative; top: 7px"
+        img src="assets/logo.png" alt="Logo" width="40" height="40" style="position: relative; top: 7px"
         | AsaCoco Store
       .right style="height: 100%"
         .input-field

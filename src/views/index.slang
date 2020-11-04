@@ -72,7 +72,7 @@ html
     header.full-screen.orange.darken-3
       .container.valign-wrapper.center-align.white-text
         .margin-auto
-          img.scale-in id="logo" src="assets/logo.png" width="210" height="210" style="animation-delay: 4s; opacity: 0;"
+          img.scale-in id="logo" src="assets/logo.png" alt="Logo" width="210" height="210" style="animation-delay: 4s; opacity: 0;"
           h3
             strong
               span.slide-down Healthiness. 
@@ -95,5 +95,5 @@ html
           a.btn-large.btn-flat href="#{product.id}.html" style="padding-left: 20px;" = product.monthly ? "Join" : "Buy"
             i.material-icons.right keyboard_arrow_right
           br
-          img.product-img src="assets/#{product.image}"
+          img.product-img src="assets/#{product.image}" alt=product.name
     == component "footer"

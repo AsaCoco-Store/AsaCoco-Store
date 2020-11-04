@@ -30,7 +30,7 @@ html
       .container
         .row
           .col.s12.m6
-            img src="assets/#{product.image}" style="width: 100%; height: 400px; object-fit: contain;"
+            img src="assets/#{product.image}" alt=product.name style="width: 100%; height: 400px; object-fit: contain;"
           .col.s12.m6
             h3
               strong = product.name
@@ -92,7 +92,9 @@ javascript:
       products[j] = products[i]
       products[i] = product
       document.getElementById(`recommend-link-${i}`).setAttribute('href', `${product.id}.html`)
-      document.getElementById(`recommend-image-${i}`).setAttribute('src', `assets/${product.image}`)
+      let img = document.getElementById(`recommend-image-${i}`)
+      img.setAttribute('src', `assets/${product.image}`)
+      img.setAttribute('alt', product.name)
       document.getElementById(`recommend-name-${i}`).textContent = product.name
       if (product.type)
         document.getElementById(`recommend-type-${i}`).textContent = product.type
