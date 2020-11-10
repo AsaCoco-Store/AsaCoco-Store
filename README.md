@@ -67,6 +67,10 @@ Kiryu Coco
 - [YouTube](https://www.youtube.com/channel/UCS9uQI-jC3DE0L4IpXyvr6w)
 - [Twitter](https://twitter.com/kiryucoco)
 
+## Credits
+
+- [Logo](src/assets/logo.png) by [buff🐉(ホロライブ箱推し)](https://twitter.com/buff47213168/status/1310568035061645312)
+
 ## License
 
 All images are copyright to Cover Corp.
