@@ -1,3 +1,12 @@
+- name: Plug-in Type AsaCoco Plushie
+  type: Plushie-type AsaCoco
+  image: plushie.jpg
+  price: 9500
+  url: https://hololive.booth.pm/items/2606904
+  cm:
+    id: h70bLgQgOTk
+    start_time: 2551
+    end_time: 3120
 - name: AsaCocoffee
   type: Waking-type AsaCoco
   image: coffee.png
