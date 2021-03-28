@@ -1,3 +1,11 @@
+- name: Plug Converter
+  type: Converter-type AsaCoco
+  image: converter.png
+  price: 1500
+  cm:
+    id: qduJr1B1LN0
+    start_time: 0
+    end_time: 0
 - name: Plug-in Type AsaCoco Plushie
   type: Plushie-type AsaCoco
   image: plushie.jpg
