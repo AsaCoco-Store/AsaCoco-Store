@@ -2,13 +2,13 @@ version: 2.0
 shards:
   ameba:
     git: https://github.com/crystal-ameba/ameba.git
-    version: 0.13.2
+    version: 0.14.1
 
   kilt:
     git: https://github.com/jeromegn/kilt.git
-    version: 0.6.0
+    version: 0.6.1
 
   slang:
     git: https://github.com/jeromegn/slang.git
-    version: 1.7.1
+    version: 1.7.2
 

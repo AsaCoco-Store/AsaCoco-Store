@@ -8,7 +8,7 @@ targets:
   asacoco_store:
     main: src/asacoco_store.cr
 
-crystal: 0.35.1
+crystal: 1.0.0
 
 license: MIT
 
