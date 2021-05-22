@@ -1,5 +1,7 @@
 # AsaCoco Store
 
+[![Crystal CI](https://github.com/AsaCoco-Store/AsaCoco-Store/actions/workflows/crystal.yml/badge.svg)](https://github.com/AsaCoco-Store/AsaCoco-Store/actions/workflows/crystal.yml)
+
 ## Installation
 
 1. Clone this repository.
