@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Build website assets
+      - name: Build executable
         run: shards build
       - name: Generate website
         run: bin/asacoco_store
