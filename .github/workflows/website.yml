@@ -1,0 +1,28 @@
+name: Deploy website
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  deploy:
+
+    runs-on: ubuntu-latest
+
+    container:
+      image: crystallang/crystal
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build website assets
+        run: shards build
+      - name: Generate website
+        run: bin/asacoco_store
+      - name: Deploy website
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: master
+          external_repository: AsaCoco-Store/AsaCoco-Store.github.io
+          cname: store.asacoco.moe
