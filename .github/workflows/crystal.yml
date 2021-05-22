@@ -18,13 +18,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      - name: Update dependencies
+        run: shards update
       - name: Install dependencies
-        run: shards install --ignore-crystal-version
-      - name: Run tests
-        run: crystal spec
+        run: shards install
       - name: Check formatting
         run: crystal tool format --check
       - name: Lint
         run: bin/ameba
-      - name: Build executable
-        run: shards build --ignore-crystal-version
