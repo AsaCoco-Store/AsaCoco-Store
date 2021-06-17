@@ -1,3 +1,12 @@
+- name: Kiryu Coco Hoodie
+  type: Wearing-type AsaCoco
+  image: hoodie.jpg
+  price: 10000
+  url: https://hololive.booth.pm/items/3010597
+  cm:
+    id: SwodJntnYBg
+    start_time: 0 
+    end_time: 0
 - name: Plug Converter
   type: Converter-type AsaCoco
   image: converter.png
